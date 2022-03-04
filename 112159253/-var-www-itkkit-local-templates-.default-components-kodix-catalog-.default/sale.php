@@ -85,11 +85,6 @@ if(!isRestoreHistory('ALL'))
     ?><div class="empty_div"><?php
 }
 
-$brand_filter = array();
-if(isset($_GET['BRAND']) && $_GET['BRAND'] != '') {
-    $brand_filter[] = intval(htmlspecialchars($_GET['BRAND']));
-}
-
 $url = $arParams['SEF_FOLDER'] . CComponentEngine::makePathFromTemplate($arParams['SEF_URL_TEMPLATES']['sale'],array());
 
 //$APPLICATION->AddChainItem(GetMessage('SALE_TITLE'),$url);
@@ -130,7 +125,7 @@ $APPLICATION->IncludeComponent(
         "SORT_VARIANTS" => $arParams['SORT_VARIANTS'],
         "JUST_NEW" => "N",
         "SALE" => "Y",
-        "BRANDS_FILTER" => $brand_filter,
+        "BRANDS_FILTER" => array(),
         "CACHE_TYPE" => $arParams['CACHE_TYPE'],
         "CACHE_TIME" => $arParams['CACHE_TIME'],
         "PAGE_ITEMS_COUNT" => $arParams['PAGE_ITEMS_COUNT'],

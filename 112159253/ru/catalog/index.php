@@ -48,9 +48,8 @@ $APPLICATION->SetPageProperty('PAGE_WRAPPER_CLASS','grid-container--space-betwee
 
 			"sale" => "catalog/sale/index.php",
 			"sale_section" => "catalog/sale/#SECTION_CODE_PATH#/",
-
-            "gift" => "catalog/gift/index.php",
-            //"gift_section" => "catalog/gift/#SECTION_CODE_PATH#/",
+                        "gift" => "catalog/gift/index.php",
+                        //"gift_section" => "catalog/gift/#SECTION_CODE_PATH#/",
 
 			"itkchoice" => "catalog/itkchoice/index.php",
 			//"itkchoice" => "catalog/itkchoice/#SECTION_CODE_PATH#/",
@@ -58,6 +57,7 @@ $APPLICATION->SetPageProperty('PAGE_WRAPPER_CLASS','grid-container--space-betwee
 			"brand_list" => "catalog/brands/index.php",
 			"brand" => "catalog/brand/#BRAND#/index.php",
 			"brand_section" => "catalog/brand/#BRAND#/#SECTION_CODE_PATH#/",
+                        "brand_sale" => "catalog/brand/#BRAND#/sale/index.php",
             //"brand_section" => "catalog/brand/#BRAND#/#SECTION_CODE_PATH#/",
             "section_brand" => "catalog/#SECTION_CODE_PATH#/brand/#BRAND#/",
             "brand_section_color" => "catalog/brand/#BRAND#/#SECTION_CODE_PATH#/#COLOR#/",

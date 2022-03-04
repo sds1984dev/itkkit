@@ -111,6 +111,9 @@ class CKodixCatalogComplexComponent extends CBitrixComponent
         if($type == 'sale')
         {
             $page = $this->arParams['SEF_URL_TEMPLATES']['sale_section'];
+//            echo '<pre>';
+//            print_r($this->arParams['SEF_URL_TEMPLATES']);
+//            echo '</pre>';die();
             $arSection['SECTION_PAGE_URL'] = $this->arParams['SEF_FOLDER'] .CComponentEngine::makePathFromTemplate($page,array('SECTION_CODE_PATH' => $sectionCode));
         }
 

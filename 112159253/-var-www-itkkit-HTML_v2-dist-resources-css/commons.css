@@ -1005,6 +1005,11 @@ yx-axis
     left: 2.5%;
 }
 
+.header-nav__dd-content--sale {
+    width: 95%;
+    left: 2.5%;
+}
+
 .header-nav__dd-content--accessories ul{
     max-height: 150px;
 }
@@ -1043,8 +1048,13 @@ flex-wrap: wrap;
         width: 95%;
         left: 2.5%;
     }
+    
+    .header-nav__dd-content--sale {
+        width: 95%;
+        left: 2.5%;
+    }
 
-    .header-nav__dd-content--accessories ul{
+    .header-nav__dd-content--accessories ul {
         max-height: 150px;
     }
     
