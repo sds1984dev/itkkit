@@ -97,8 +97,6 @@ if ($arTag = $resTag->GetNextElement()){
                         $arFilters[] = array('!%'.substr($value, 2) => $arTagProps['FILTER']['DESCRIPTION'][$key]);
                     } elseif (substr($value, 0, 1) == '!'){
                         $arFilters[] = array('!='.substr($value, 1) => $arTagProps['FILTER']['DESCRIPTION'][$key]);
-                    } elseif (substr($value, 0, 1) == '%') {
-                        $arFilters[] = array('?'.substr($value, 1) => $arTagProps['FILTER']['DESCRIPTION'][$key]);
                     } else {
                         $arFilters[] = array('%'.$value => $arTagProps['FILTER']['DESCRIPTION'][$key]);
                     }
@@ -112,7 +110,6 @@ if ($arTag = $resTag->GetNextElement()){
                     foreach (explode(',',$arTagProps['FILTER']['DESCRIPTION'][$key]) as $prop){
                         $arPropsResult[] = trim($prop);
                     }
-                    // var_dump($arPropsResult);
                     if (substr($value, 0, 2) == '!%'){
                         $arFilters[] = array('!%PROPERTY_'.substr($value, 2) => $arPropsResult);
                     } elseif (substr($value, 0, 1) == '%'){
@@ -125,6 +122,7 @@ if ($arTag = $resTag->GetNextElement()){
                     break;
             }
         }
+
         $arrIdsFilter = call_user_func_array('array_merge', $arrFiltersIds);
         $arrFilter = call_user_func_array('array_merge', $arFilters);
         $arrFilter['=ID'] = $arrIdsFilter;
