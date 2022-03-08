@@ -252,7 +252,7 @@ class CKodixCatalogListComponent extends CBitrixComponent
                         $filter['PROPERTY_BADGE_VALUE'] = 'GIFT';
                     break;
                 case "BRANDS_FILTER":
-                        $filter["PROPERTY_CML2_MANUFACTURER"]= array($value);
+                        $filter["PROPERTY_CML2_MANUFACTURER"]= $value;
                     break;
                 case "COLORS_FILTER":
                         $filter["PROPERTY_COLORS"]= $value;

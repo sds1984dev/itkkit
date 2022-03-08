@@ -127,44 +127,58 @@ if (!function_exists('sort_subitems')) {
     }
 }
 
-
+$arSaleBrands = array();
+$arSaleSection = array();
+$arSectionExist = array();
+$arBrandExist = array();
 $arOrder = array();
 $arFilter = array('IBLOCK_ID' => 1, 'PROPERTY_BADGE_VALUE' => 'Sale', 'INCLUDE_SUBSECTIONS' => 'Y', 'ACTIVE' => 'Y');
-$arSelect = array('IBLOCK_SECTION_ID');
+$arSelect = array('ID', 'IBLOCK_SECTION_ID');
+
 $dbElements = CIBlockElement::GetList($arOrder, $arFilter, false, false, $arSelect);
 
-
-// $arSaleBrands = array();
-
-// while ($arElement = $dbElements->Fetch()) {
-//     $arProperty = CIBlockElement::GetPropertyValues(1, array('ID' => $arElement['ID']), false, array('ID' => 1))->Fetch();
-//     $arBrand = CIBlockElement::GetByID($arProperty[1][0])->Fetch();
-    //NAME, CODE
-//     echo "<pre>";
-// print_r($arBrand);
-// echo "</pre>";
-// die();
-//     $arBrands[] = $arBrand['NAME'];
-// }
-// $arSaleBrands = array_unique($arBrands);
-
-$arSaleSection = array();
-
 while ($arElement = $dbElements->Fetch()) {
+    $arProperty = CIBlockElement::GetPropertyValues(1, array('ID' => $arElement['ID']), false, array('ID' => 1))->Fetch();
+    $arBrand = CIBlockElement::GetList(array(), array('IBLOCK_ID' => 3, 'ID' => $arProperty[1][0]), false, false, array('ID', 'NAME', 'PROPERTY_SHOW_MENU_SALE'))->Fetch();
+ 
+    if($arBrand['PROPERTY_SHOW_MENU_SALE_VALUE'] == 'Y') {
+        if (!in_array($arBrand['NAME'], $arBrandExist)) {
+            $formattedPath = '/catalog/sale/?BRAND=' . $arBrand['ID'];
+            $arBrands[] = array('NAME' => $arBrand['NAME'], 'PATH' => $formattedPath);
+            $arBrandExist[] = $arBrand['NAME'];
+        }
+    } 
+     
     $rsParentSection = CIBlockSection::GetByID($arElement['IBLOCK_SECTION_ID']);
     if ($arParentSection = $rsParentSection->GetNext())
     {
        $arFilter = array('IBLOCK_ID' => 1,'>DEPTH_LEVEL' => $arParentSection['DEPTH_LEVEL'], 'UF_SHOW_SALE' => true);
        $rsSect = CIBlockSection::GetList(array('IBLOCK_ID' => 1, 'left_margin' => 'asc'),$arFilter, false, array('UF_EN_NAME'));
+       
        while ($arSect = $rsSect->GetNext())
        {
-            $sectionParts = explode('/', $arSect['SECTION_PAGE_URL']);
-            $fromattedSect = '/' . $sectionParts[1] . '/sale/' . $sectionParts[2] . '/' . $sectionParts[3];
-            $arSaleSection[] = array('NAME' => (SITE_ID == 's1') ? $arSect['NAME'] : $arSect['UF_EN_NAME'], 'SECTION_PATH' => $fromattedSect);
+           
+           if (!in_array($arSect['NAME'], $arSectionExist)) {
+                $sectionParts = explode('/', $arSect['SECTION_PAGE_URL']);
+                $fromattedSect = '/' . $sectionParts[1] . '/sale/' . $sectionParts[2] . '/' . $sectionParts[3];
+                $arSaleSection[] = array('NAME' => (SITE_ID == 's1') ? $arSect['NAME'] : $arSect['UF_EN_NAME'], 'SECTION_PATH' => $fromattedSect);
+                $arSectionExist[] = $arSect['NAME'];
+           }
        }
     }
 }
 
+ $arMenuSaleBrands = array();
+ foreach ($arBrands as $brand) {
+    $arSection = array('item' => array(), 'children' => array());
+    $arSection['item']['TEXT'] = $brand['NAME'];
+    $arSection['item']['LINK'] = $brand['PATH'];
+    $arSection['item']['DEPTH_LEVEL'] = 1;
+    $arSection['item']['PERMISSION'] = 'R';
+    $arSection['item']['PARAMS']['DEPTH_LEVEL'] = 2;
+    $arMenuSaleBrands[] = $arSection;
+ }
+ 
 $arMenuSale = array();
 
 foreach ($arSaleSection as $section) {
@@ -176,6 +190,8 @@ foreach ($arSaleSection as $section) {
     $arSection['item']['PARAMS']['DEPTH_LEVEL'] = 2;
     $arMenuSale[] = $arSection;
 }
+
+$arMenuSale = array_merge(array_values($arMenuSaleBrands), array_values($arMenuSale));
 
 foreach ($arResult as &$section) {
     if ($section['item']['TEXT'] == 'Sale') {

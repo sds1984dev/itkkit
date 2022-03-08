@@ -266,6 +266,7 @@ class CKodixCatalogListComponent extends CBitrixComponent
                     break;*/
             }
         }
+        
         $filter["INCLUDE_SUBSECTIONS"]="Y";
 
         if($global_filter = getGlobalFilterForSite()){

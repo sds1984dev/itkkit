@@ -1,0 +1,32 @@
+<?
+$MESS["KDX_SORT_ASC"] = "По возрастанию";
+$MESS["KDX_SORT_DESC"] = "По убыванию";
+$MESS["KDX_SORT_BY_ID"] = "ID";
+$MESS["KDX_SORT_BY_NAME"] = "Название";
+$MESS["KDX_SORT_BY_ACTIVE_FROM"] = "Дата начала активности";
+$MESS["KDX_SORT_BY_SORT"] = "Сортировка";
+$MESS["KDX_SORT_BY_TIMESTAMP"] = "Дата последнего изменения";
+$MESS["KDX_SORT_FIRST_FIELD"] = "Поле для первой сортировки элеменов";
+$MESS["KDX_SORT_FIRST_DIRECTION"] = "Направление для первой сортировки элементов";
+$MESS["KDX_SORT_SECOND_FIELD"] = "Поле для второй сортировки элементов";
+$MESS["KDX_SORT_SECOND_DIRECTION"] = "Направление для второй сортировки элементов";
+$MESS["KDX_IBLOCK_TYPE"] = "Тип инфоблока";
+$MESS["KDX_IBLOCK_ID"] = "Инфоблок каталога";
+$MESS['KDX_CATALOG_IBLOCK_ID'] = 'ID ИБ товаров';
+$MESS['KDX_SKU_IBLOCK_ID'] = 'ID ИБ торговых предложений';
+$MESS['KDX_BRANDS_IBLOCK_ID'] = 'ID ИБ брендов';
+$MESS['KDX_GRIDS_IBLOCK_ID'] = 'ID ИБ размерных сеток';
+$MESS["KDX_ITEMS_COUNT"] = "Количество элементов";
+$MESS["KDX_FILTER_NEW"] = "Показывать только новинки";
+$MESS["KDX_FILTER_SALE"] = "Показывать только товары со скидкой";
+$MESS["KDX_BRANDS_FILTER"] = "Показывать товары только этих брендов";
+$MESS["KDX_SECTION_ID"] = "Показывать товары только из раздела с этим ID";
+$MESS["KDX_PAGINATION_TEMPLATES"] = "Шаблон постраничной навигации";
+$MESS["KDX_PAGINATION_WRAPPER"] = "Селектор перегружаемой аяксом области";
+$MESS["KDX_SORT_VARIANTS"] = "Возможные варианты смены сортировки";
+/*$MESS["PROP_NEW"] = "Название свойства Новинка";
+$MESS["PROP_SALE"] = "Название свойства Распродажа";
+$MESS["PROP_POPULAR"] = "Название свойства Популярный товар";
+$MESS["PROP_SHOW_ON_INDEX"] = "Название свойства Показывать на главной";
+$MESS["PROP_MONTH_PRODUCT"] = "Название свойства Товар месяца";*/
+?>

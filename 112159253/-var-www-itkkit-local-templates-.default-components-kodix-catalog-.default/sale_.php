@@ -6,6 +6,7 @@
  * Developer:   Kostin Denis
  */
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
+
 $APPLICATION->SetPageProperty('WEBPACK_JS','catalog');
 $APPLICATION->AddHeadString('<meta property="og:title" content="Sale at itk online store"/>');
 $APPLICATION->AddHeadString('<meta property="og:type" content="website"/>');
@@ -81,7 +82,12 @@ if(!isAjax())
 
 if(!isRestoreHistory('ALL'))
 {
-    ?><div class="empty_div"><?
+    ?><div class="empty_div"><?php
+}
+
+$brand_filter = array();
+if(isset($_GET['BRAND']) && $_GET['BRAND'] != '') {
+    $brand_filter[] = intval(htmlspecialchars($_GET['BRAND']));
 }
 
 $url = $arParams['SEF_FOLDER'] . CComponentEngine::makePathFromTemplate($arParams['SEF_URL_TEMPLATES']['sale'],array());
@@ -106,6 +112,7 @@ if(SITE_TEMPLATE_ID != 'ajax' || ($_SERVER['REQUEST_METHOD'] == 'POST' && is_arr
         $component
     );
 }
+
 $GLOBALS["NavNum"] = 0;
 $APPLICATION->IncludeComponent(
     "kodix:catalog.list",
@@ -123,8 +130,7 @@ $APPLICATION->IncludeComponent(
         "SORT_VARIANTS" => $arParams['SORT_VARIANTS'],
         "JUST_NEW" => "N",
         "SALE" => "Y",
-        "BRANDS_FILTER" => array(
-        ),
+        "BRANDS_FILTER" => $brand_filter,
         "CACHE_TYPE" => $arParams['CACHE_TYPE'],
         "CACHE_TIME" => $arParams['CACHE_TIME'],
         "PAGE_ITEMS_COUNT" => $arParams['PAGE_ITEMS_COUNT'],
