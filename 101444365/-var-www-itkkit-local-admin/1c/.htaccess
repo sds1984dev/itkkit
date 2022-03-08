@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Private zone!"
+AuthUserFile /var/www/itkkit/local/admin/1c/.htpasswd
+Require valid-user

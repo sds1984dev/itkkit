@@ -1,0 +1,64 @@
+array(31) {
+  [1]=>
+  string(2) "77"
+  [2]=>
+  string(4) "City"
+  [3]=>
+  string(7) "Address"
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(0) ""
+  [6]=>
+  string(0) ""
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(7) "1234567"
+  [9]=>
+  string(7) "skaryuk"
+  [10]=>
+  string(0) ""
+  [11]=>
+  string(6) "123456"
+  [12]=>
+  string(2) "77"
+  [13]=>
+  string(4) "City"
+  [14]=>
+  string(7) "Address"
+  [15]=>
+  string(0) ""
+  [16]=>
+  string(0) ""
+  [17]=>
+  string(0) ""
+  [18]=>
+  string(0) ""
+  [19]=>
+  string(7) "1234567"
+  [20]=>
+  string(7) "skaryuk"
+  [21]=>
+  string(0) ""
+  [22]=>
+  string(7) "skaryuk"
+  [23]=>
+  string(7) "skaryuk"
+  [24]=>
+  string(22) "skaryuk@rush-agency.ru"
+  [25]=>
+  string(22) "skaryuk@rush-agency.ru"
+  [26]=>
+  string(6) "123456"
+  [27]=>
+  string(1) "0"
+  [28]=>
+  string(0) ""
+  [29]=>
+  string(0) ""
+  [30]=>
+  string(1) "Y"
+  [31]=>
+  string(0) ""
+}

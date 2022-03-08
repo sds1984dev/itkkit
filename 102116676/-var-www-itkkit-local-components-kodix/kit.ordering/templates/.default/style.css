@@ -1,0 +1,18 @@
+.btn_profile, .btn_coupon, .btn_pay{
+    padding: 0 20rem;
+}
+
+.success_block .fs17{
+    height: 20rem;
+    text-align: center;
+    display: block;
+}
+
+.success_block .btn_profile{
+    float: none;
+    padding: 4rem 20rem 0 20rem;
+}
+
+.red_txt{
+    color: #ff5b5b;
+}

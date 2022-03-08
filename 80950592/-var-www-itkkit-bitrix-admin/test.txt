@@ -1,0 +1,332 @@
+array(2) {
+  [0]=>
+  array(41) {
+    ["BASKET_ID"]=>
+    string(6) "707035"
+    ["CURRENCY"]=>
+    string(3) "EUR"
+    ["CALLBACK_FUNC"]=>
+    string(0) ""
+    ["ORDER_CALLBACK_FUNC"]=>
+    string(0) ""
+    ["CANCEL_CALLBACK_FUNC"]=>
+    string(0) ""
+    ["PAY_CALLBACK_FUNC"]=>
+    string(0) ""
+    ["PRODUCT_PROVIDER_CLASS"]=>
+    string(18) "KDXProductProvider"
+    ["DISCOUNT_PRICE"]=>
+    string(15) "8.8695652173913"
+    ["VAT_RATE"]=>
+    float(0)
+    ["WEIGHT"]=>
+    float(0)
+    ["MODULE"]=>
+    string(10) "kodix.sale"
+    ["NOTES"]=>
+    string(6) "RETAIL"
+    ["CATALOG_XML_ID"]=>
+    string(5) "sizes"
+    ["PRODUCT_XML_ID"]=>
+    string(73) "0b49f7e8-0c01-11ec-80f3-b4b52f67dfdb#00000000-0000-0000-0000-000000000000"
+    ["DETAIL_PAGE_URL"]=>
+    string(29) "/catalog/detail.php?ID=184109"
+    ["NAME"]=>
+    string(43) "Fucking Awesome Dill Collage II Deck 8.38''"
+    ["PRICE_DEFAULT"]=>
+    string(5) "59.13"
+    ["PRODUCT_ID"]=>
+    int(184109)
+    ["BARCODE_MULTI"]=>
+    string(1) "N"
+    ["HAS_SAVED_QUANTITY"]=>
+    string(1) "N"
+    ["CUSTOM_PRICE"]=>
+    string(1) "N"
+    ["TYPE"]=>
+    int(0)
+    ["SET_PARENT_ID"]=>
+    int(0)
+    ["PROPS"]=>
+    array(5) {
+      [1]=>
+      array(4) {
+        ["NAME"]=>
+        string(15) "Id товара"
+        ["VALUE"]=>
+        string(6) "184108"
+        ["CODE"]=>
+        string(9) "PARENT_ID"
+        ["SORT"]=>
+        string(3) "100"
+      }
+      [2]=>
+      array(4) {
+        ["NAME"]=>
+        string(23) "Базовая цена"
+        ["VALUE"]=>
+        string(5) "80.00"
+        ["CODE"]=>
+        string(12) "BASE_PRICE_P"
+        ["SORT"]=>
+        string(3) "100"
+      }
+      [3]=>
+      array(4) {
+        ["NAME"]=>
+        string(35) "Детальная страница"
+        ["VALUE"]=>
+        string(67) "/catalog/product/184108_fucking-awesome-dill-collage-ii-deck-8-38-/"
+        ["CODE"]=>
+        string(15) "DETAIL_PAGE_URL"
+        ["SORT"]=>
+        string(3) "100"
+      }
+      [4]=>
+      array(4) {
+        ["NAME"]=>
+        string(36) "Картинка для анонса"
+        ["VALUE"]=>
+        string(6) "115546"
+        ["CODE"]=>
+        string(15) "PREVIEW_PICTURE"
+        ["SORT"]=>
+        string(3) "100"
+      }
+      [5]=>
+      array(4) {
+        ["NAME"]=>
+        string(12) "Размер"
+        ["VALUE"]=>
+        string(8) "ONE_SIZE"
+        ["CODE"]=>
+        string(4) "SIZE"
+        ["SORT"]=>
+        string(3) "100"
+      }
+    }
+    ["QUANTITY"]=>
+    float(1)
+    ["PRICE"]=>
+    float(68)
+    ["TABLE_ROW_ID"]=>
+    int(707035)
+    ["QUANTITY_DEFAULT"]=>
+    int(1)
+    ["LID"]=>
+    string(2) "s1"
+    ["CAN_BUY"]=>
+    string(1) "Y"
+    ["RESERVED"]=>
+    string(1) "Y"
+    ["PRODUCT_PRICE_ID"]=>
+    string(6) "318856"
+    ["BASE_PRICE"]=>
+    float(80)
+    ["DIMENSIONS"]=>
+    array(3) {
+      ["WIDTH"]=>
+      string(1) "0"
+      ["HEIGHT"]=>
+      string(1) "0"
+      ["LENGTH"]=>
+      string(1) "0"
+    }
+    ["DISCOUNT_VALUE"]=>
+    string(3) "15%"
+    ["DISCOUNT_NAME"]=>
+    string(8) "[71] 15%"
+    ["DISCOUNT_COUPON"]=>
+    string(11) "vsemkoroche"
+    ["DISCOUNT_LIST"]=>
+    array(1) {
+      [0]=>
+      array(12) {
+        ["ID"]=>
+        string(2) "71"
+        ["NAME"]=>
+        string(3) "15%"
+        ["COUPON"]=>
+        string(11) "vsemkoroche"
+        ["COUPON_TYPE"]=>
+        string(1) "N"
+        ["USE_COUPONS"]=>
+        string(1) "Y"
+        ["MODULE_ID"]=>
+        string(7) "catalog"
+        ["TYPE"]=>
+        int(0)
+        ["VALUE"]=>
+        float(15)
+        ["VALUE_TYPE"]=>
+        string(1) "P"
+        ["MAX_VALUE"]=>
+        float(0)
+        ["CURRENCY"]=>
+        string(3) "EUR"
+        ["HANDLERS"]=>
+        array(2) {
+          ["MODULES"]=>
+          array(0) {
+          }
+          ["EXT_FILES"]=>
+          array(0) {
+          }
+        }
+      }
+    }
+    ["SUBSCRIBE"]=>
+    string(1) "N"
+    ["DISCOUNT_PRICE_PERCENT"]=>
+    float(15)
+    ["ID"]=>
+    int(707035)
+  }
+  [1]=>
+  array(40) {
+    ["BASKET_ID"]=>
+    string(6) "707034"
+    ["CURRENCY"]=>
+    string(3) "EUR"
+    ["CALLBACK_FUNC"]=>
+    string(0) ""
+    ["ORDER_CALLBACK_FUNC"]=>
+    string(0) ""
+    ["CANCEL_CALLBACK_FUNC"]=>
+    string(0) ""
+    ["PAY_CALLBACK_FUNC"]=>
+    string(0) ""
+    ["PRODUCT_PROVIDER_CLASS"]=>
+    string(18) "KDXProductProvider"
+    ["DISCOUNT_PRICE"]=>
+    string(1) "0"
+    ["VAT_RATE"]=>
+    float(0)
+    ["WEIGHT"]=>
+    float(0)
+    ["MODULE"]=>
+    string(10) "kodix.sale"
+    ["NOTES"]=>
+    string(6) "RETAIL"
+    ["CATALOG_XML_ID"]=>
+    string(5) "sizes"
+    ["PRODUCT_XML_ID"]=>
+    string(73) "ed781e2a-d7ee-11eb-80f2-b4b52f67dfdb#00000000-0000-0000-0000-000000000000"
+    ["DETAIL_PAGE_URL"]=>
+    string(29) "/catalog/detail.php?ID=179448"
+    ["NAME"]=>
+    string(41) "Журнал Buffalo Zine 13 2021 Cover 5"
+    ["PRICE_DEFAULT"]=>
+    string(5) "40.00"
+    ["PRODUCT_ID"]=>
+    int(179448)
+    ["BARCODE_MULTI"]=>
+    string(1) "N"
+    ["HAS_SAVED_QUANTITY"]=>
+    string(1) "N"
+    ["CUSTOM_PRICE"]=>
+    string(1) "N"
+    ["TYPE"]=>
+    int(0)
+    ["SET_PARENT_ID"]=>
+    int(0)
+    ["PROPS"]=>
+    array(5) {
+      [1]=>
+      array(4) {
+        ["NAME"]=>
+        string(15) "Id товара"
+        ["VALUE"]=>
+        string(6) "179447"
+        ["CODE"]=>
+        string(9) "PARENT_ID"
+        ["SORT"]=>
+        string(3) "100"
+      }
+      [2]=>
+      array(4) {
+        ["NAME"]=>
+        string(23) "Базовая цена"
+        ["VALUE"]=>
+        string(5) "40.00"
+        ["CODE"]=>
+        string(12) "BASE_PRICE_P"
+        ["SORT"]=>
+        string(3) "100"
+      }
+      [3]=>
+      array(4) {
+        ["NAME"]=>
+        string(35) "Детальная страница"
+        ["VALUE"]=>
+        string(53) "/catalog/product/179447_buffalo-zine-13-2021-cover-5/"
+        ["CODE"]=>
+        string(15) "DETAIL_PAGE_URL"
+        ["SORT"]=>
+        string(3) "100"
+      }
+      [4]=>
+      array(4) {
+        ["NAME"]=>
+        string(36) "Картинка для анонса"
+        ["VALUE"]=>
+        string(6) "111713"
+        ["CODE"]=>
+        string(15) "PREVIEW_PICTURE"
+        ["SORT"]=>
+        string(3) "100"
+      }
+      [5]=>
+      array(4) {
+        ["NAME"]=>
+        string(12) "Размер"
+        ["VALUE"]=>
+        string(8) "ONE_SIZE"
+        ["CODE"]=>
+        string(4) "SIZE"
+        ["SORT"]=>
+        string(3) "100"
+      }
+    }
+    ["QUANTITY"]=>
+    float(1)
+    ["PRICE"]=>
+    float(40)
+    ["TABLE_ROW_ID"]=>
+    int(707034)
+    ["QUANTITY_DEFAULT"]=>
+    int(1)
+    ["LID"]=>
+    string(2) "s1"
+    ["CAN_BUY"]=>
+    string(1) "Y"
+    ["RESERVED"]=>
+    string(1) "Y"
+    ["PRODUCT_PRICE_ID"]=>
+    string(6) "310755"
+    ["BASE_PRICE"]=>
+    float(40)
+    ["DIMENSIONS"]=>
+    array(3) {
+      ["WIDTH"]=>
+      string(1) "0"
+      ["HEIGHT"]=>
+      string(1) "0"
+      ["LENGTH"]=>
+      string(1) "0"
+    }
+    ["DISCOUNT_VALUE"]=>
+    int(0)
+    ["DISCOUNT_NAME"]=>
+    string(0) ""
+    ["DISCOUNT_COUPON"]=>
+    string(0) ""
+    ["DISCOUNT_LIST"]=>
+    array(0) {
+    }
+    ["SUBSCRIBE"]=>
+    string(1) "N"
+    ["ID"]=>
+    int(707034)
+  }
+}

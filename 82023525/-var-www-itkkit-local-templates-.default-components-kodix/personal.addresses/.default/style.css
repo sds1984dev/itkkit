@@ -1,0 +1,17 @@
+.location-container {
+    position: absolute;
+    z-index: 300;
+    background-color: #ffffff;
+    border: 1rem solid #e2e2e2;
+    top: 120%;
+    width: 100%;
+    display: none;
+}
+
+.location-container ul li{
+    padding: 4rem 10rem;
+    border-bottom: 1rem solid #e2e2e2;
+    line-height: 15rem;
+    height: 25rem;
+    cursor: pointer;
+}

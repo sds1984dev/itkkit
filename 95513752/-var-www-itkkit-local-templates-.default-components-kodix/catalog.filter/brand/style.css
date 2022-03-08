@@ -1,0 +1,20 @@
+/*.catalog-filter__size-item .checkbox__label {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    flex-wrap: wrap;*/
+/*    flex-direction: column;*/
+/*    line-height: 1;*/
+/*    text-align: center;*/
+/*    border: 1px solid #e5e5e5;*/
+/*    -webkit-transition: border-color .3s;*/
+/*    transition: border-color .3s;*/
+/*    font-size: 15px;*/
+/*    letter-spacing: -.5px;*/
+/*}*/
+
+.catalog-filter__size-item .checkbox__label i {
+    font-size: 11px;
+    font-style: normal;
+    text-transform: lowercase;
+}

@@ -1,0 +1,8 @@
+.delivery_info {
+	color: red;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.checkout__step-header {
+	margin-bottom: 10px !important;
+}

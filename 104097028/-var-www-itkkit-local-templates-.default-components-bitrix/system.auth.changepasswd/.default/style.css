@@ -1,0 +1,10 @@
+.block_entry.page{
+    width: 336rem;
+    float: none;
+    margin: 100rem auto;
+}
+
+.block_entry.page .form_item_v2.abs_v1{
+    position: relative;
+    bottom: 0;
+}
